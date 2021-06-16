@@ -22,7 +22,7 @@ FROM retirement_titles
 ORDER BY emp_no, to_date DESC;
 SELECT * FROM recent_retirement_titles;
 
--- Number of employees retiring
+-- Number of employees retiring by title
 SELECT COUNT(title), ut.title
 INTO retiring_titles
 FROM unique_titles as ut
